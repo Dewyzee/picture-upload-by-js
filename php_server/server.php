@@ -8,7 +8,11 @@ else
   echo '
     {
       "errCode": 0,
-      "data": '2016-03-18'
+      "data": {
+        "filename": $_FILES["file"]["name"],
+        "filesize": ($_FILES["file"]["size"] / 1024),
+        "filetype": $_FILES["file"]["type"]
+      }
     }
   '
   }
