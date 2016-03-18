@@ -5,9 +5,11 @@ if ($_FILES["file"]["error"] > 0)
   }
 else
   {
-  echo "Upload: " . $_FILES["file"]["name"] . "<br />";
-  echo "Type: " . $_FILES["file"]["type"] . "<br />";
-  echo "Size: " . ($_FILES["file"]["size"] / 1024) . " Kb<br />";
-  echo "Stored in: " . $_FILES["file"]["tmp_name"];
+  echo '
+    {
+      "errCode": 0,
+      "data": '2016-03-18'
+    }
+  '
   }
 ?>
