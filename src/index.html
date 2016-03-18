@@ -9,11 +9,11 @@
     <script type="text/javascript" src="../dep/zepto/index.js"></script>
 </head>
 <body>
-    <form name="input" action="../php_server/server.php" id="pic-upload" method="post">
+    <form action="../php_server/server.php" id="pic-upload" method="post">
         <!-- 支持file api的浏览器有ie10+, firefox4+, safari5.0.5+, Opera11.1+, chrome-->
         <div class="button" >
             <span class="info">点我点我</span>
-            <input  name="file" id="file-input" value="" type="file" accept="image/*" />
+            <input name="file" id="file-input" value="" type="file" accept="image/*" />
         </div>
 
         <span>图片加载进度: <span id="processing"></span></span>
